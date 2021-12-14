@@ -70,62 +70,53 @@ Aquesta consulta requereix disposar de conveni amb la DGT.
 
 | _Element_ | _Descripció_ |
 | --- | --- |
-| peticioConsultaVehicle/matricula| Matrícula del vehicle. |
-| peticioConsultaVehicle/bastidor	| Bastidor del vehicle. |
-| peticioConsultaVehicle/nive	| NIVE del vehicle. |
+| peticioConsultaVehicle/matricula | Matrícula del vehicle. |
+| peticioConsultaVehicle/bastidor | Bastidor del vehicle. |
+| peticioConsultaVehicle/nive | NIVE del vehicle. |
 
 ![image](https://user-images.githubusercontent.com/32306731/145855951-db9dfd14-bf9d-478a-a434-20c62e2c1b8a.png)
 
 ============================== CONTINUAR A PARTIR D'AQUI
 
-3.1.2	Resposta – dades específiques
+### 3.1.2 Resposta – dades específiques <a name="3.1.2"></a>
 
+![image](https://user-images.githubusercontent.com/32306731/146054058-85d77a8c-7820-44d4-8333-77b2d41d73f3.png)
 
+| _Element_ | _Descripció_ |
+| --- | --- |
+| respostaConsultaVehicle/ peticioConsultaVehicle | Bloc de dades corresponent a la petició que origina la resposta. |
+| respostaConsultaVehicle/resposta/ | Dades del vehicle consultat. |
+| DatosVehiculo |  |
+| respostaConsultaVehicle/resultat/ codiResultat | Codi de resultat de la consulta: <ul><li>0: consulta realitzada correctament.</li><li>1: vehicle sense antecedents.</li><li>0502: error realitzant la consulta.</li></ul> |
+| respostaConsultaVehicle/resultat/descripcio | Descripció del resultat. |
 
-Element	Descripció
-respostaConsultaVehicle/ peticioConsultaVehicle	Bloc de dades corresponent a la petició que origina la resposta.
-respostaConsultaVehicle/resposta/	Dades del vehicle consultat.
+#### 3.1.2.1 Dades d’un vehicle 
+
+| _Element_ | _Descripció_ |
+| --- | --- |
+| Dades generals | Dades generals |
+| DatosVehiculo/DatosGenerales | Bloc de dades corresponent a les dades generals del vehicle. |
+| //DatosGenerales/DescripcionVehiculo | Bloc de dades corresponent a la descripció del vehicle. |
+| //DescripcionVehiculo/Bastidor | Número de bastidor del vehicle. |
+| //DescripcionVehiculo/NIVE | NIVE del vehicle. |
+| //DescripcionVehiculo/Marca/Codigo | Marca del vehicle. |
+| //DescripcionVehiculo/Marca/Descripcion | Marca del vehicle. |
+| //DescripcionVehiculo/Modelo | Model del vehicle. |
+| //DescripcionVehiculo/Servicio/Codigo | Servei al que està destinat el vehicle. |
+| //DescripcionVehiculo/Servicio/Descripcion | Servei al que està destinat el vehicle. |
+| //DescripcionVehiculo/TipoIndustria/Codigo | Tipus definit per indústria. |
+| //DescripcionVehiculo/TipoIndustria/Descripcion | Tipus definit per indústria. |
+| //DescripcionVehiculo/TipoVehiculo/Codigo | Tipus de vehicle. |
+| //DescripcionVehiculo/TipoVehiculo/Descripcion | Tipus de vehicle. |
+| //DatosGenerales/DomicilioVehiculoDGT | Bloc de dades corresponent al domicili del vehicle a la DGT. |
+| //DomicilioVehiculoDGT/Calle | Adreça. |
+| //DomicilioVehiculoDGT/CodigoPostal | Codi postal. |
+| //DomicilioVehiculoDGT/Municipio | Municipi. |
+| //DomicilioVehiculoDGT/Provincia/Codigo | Província. |
+| //DomicilioVehiculoDGT/Provincia/Nombre |  Província. |
+| //DomicilioVehiculoDGT/Localidad | Localitat. |
  
-
-
-Element	Descripció
-DatosVehiculo	
-respostaConsultaVehicle/resultat/ codiResultat	Codi de resultat de la consulta:
-•	0: consulta realitzada correctament.
-•	1: vehicle sense antecedents.
-•	0502: error realitzant la consulta.
-respostaConsultaVehicle/resultat/ descripcio	Descripció del resultat.
-
-3.1.2.1	Dades d’un vehicle
-
-Element	Descripció
-Dades generals
-DatosVehiculo/DatosGenerales	Bloc de dades corresponent a les dades generals del vehicle.
-//DatosGenerales/DescripcionVehiculo	Bloc de dades corresponent a la descripció del vehicle.
-//DescripcionVehiculo/Bastidor	Número de bastidor del vehicle.
-//DescripcionVehiculo/NIVE	NIVE del vehicle.
-//DescripcionVehiculo/Marca/Codigo	Marca del vehicle.
-//DescripcionVehiculo/Marca/Descripcion	
-//DescripcionVehiculo/Modelo	Model del vehicle.
-//DescripcionVehiculo/Servicio/Codigo	Servei al que està destinat el vehicle.
-//DescripcionVehiculo/Servicio/Descripcion	
-//DescripcionVehiculo/TipoIndustria
-/Codigo	Tipus definit per indústria.
-//DescripcionVehiculo/TipoIndustria
-/Descripcion	
-//DescripcionVehiculo/TipoVehiculo
-/Codigo	Tipus de vehicle.
-//DescripcionVehiculo/TipoVehiculo
-/Descripcion	
-//DatosGenerales/DomicilioVehiculoDGT	Bloc de dades corresponent al domicili del vehicle a la DGT.
-//DomicilioVehiculoDGT/Calle	Adreça.
-//DomicilioVehiculoDGT/CodigoPostal	Codi postal.
-//DomicilioVehiculoDGT/Municipio	Municipi.
-//DomicilioVehiculoDGT/Provincia/Codigo	Província.
-//DomicilioVehiculoDGT/Provincia/Nombre	
-//DomicilioVehiculoDGT/Localidad	Localitat.
- 
-
+============================== CONTINUAR A PARTIR D'AQUI
 
 Element	Descripció
 	
