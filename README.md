@@ -54,6 +54,7 @@ Les dades disponibles a través del servei són les que es presenten a continuac
 | **DGT** | DGT_TITULAR_VIA | Consulta de dades d'un vehicle per part del titular de la via. |
 | **DGT** | DGT_SANCIONS_CONDUCTOR | Consulta de sancions, vigències i condemnes penals d'un conductor. |
 | **DGT** | DGT_VEHICLES_CONDUCTOR | Consulta dels vehicles enregistrats a la DGT per a un propietari. |
+| **DGT** | DGT_DISTINTIU_MEDIAMBIENTAL | Consulta del distintiu mediambiental d’un vehicle. |
 
 
 # 3 Missatgeria dels serveis <a name="3"></a>
@@ -61,7 +62,7 @@ Les dades disponibles a través del servei són les que es presenten a continuac
 A continuació es detalla la missatgeria corresponent al bloc de dades específiques de les modalitats de consum del producte DGT.
 
 
-## 3.1 CConsulta de dades d’un vehicle (DGT_DADES_VEHICLE) <a name="3.1"></a>
+## 3.1 Consulta de dades d’un vehicle (DGT_DADES_VEHICLE) <a name="3.1"></a>
 
 Consulta de les dades d’un vehicle a partir de la matrícula, número de bastidor o NIVE.
 
