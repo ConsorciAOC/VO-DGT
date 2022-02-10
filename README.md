@@ -21,12 +21,15 @@
    4. [3.4 Consulta de dades de l’assegurança d’un vehicle (DGT_TITULAR_VIA)](#3.4)
       1. [3.4.1 Petició – dades específiques](#3.4.1)
       2. [3.4.2 Resposta – dades específiques](#3.4.2)
-   5. [3.5 Consulta de sancions d’un conductor (DGT_SANCIONS_CONDUCTOR)](#3.4)
+   5. [3.5 Consulta de sancions d’un conductor (DGT_SANCIONS_CONDUCTOR)](#3.5)
       1. [3.5.1 Petició – dades específiques](#3.5.1)
       2. [3.5.2 Resposta – dades específiques](#3.5.2)
-   6. [3.6 Consulta de vehicles d’un conductor (DGT_VEHICLES_CONDUCTOR)](#3.4)
+   6. [3.6 Consulta de vehicles d’un conductor (DGT_VEHICLES_CONDUCTOR)](#3.6)
       1. [3.6.1 Petició – dades específiques](#3.6.1)
       2. [3.6.2 Resposta – dades específiques](#3.6.2)
+   7. [3.7 Consulta del distintiu mediambiental d'un vehicle (DGT_DISTINTIU_MEDIAMBIENTAL)](#3.7)
+      1. [3.7.1 Petició – dades específiques](#3.7.1)
+      2. [3.7.2 Resposta – dades específiques](#3.7.2)
  
 # 1. Introducció <a name="1"></a>
 
@@ -605,14 +608,14 @@ Consulta de sancions, vigències i condemnes penals d'un conductor.
 
 Consulta dels vehicles enregistrats a la DGT per a un propietari.
 
-## 3.6.1 Petició – dades genèriques
+## 3.6.1 Petició – dades genèriques <a name="3.6.1"></a>
 
 | _Element_ | _Descripció_ |
 | --- | --- |
 | //DatosGenericos/Titular/TipoDocumentacion | Tipus de documentació (NIF o NIE). |
 | //DatosGenericos/Titular/Documentacion | Documentació. |
 
-## 3.6.2 Resposta – dades específiques
+## 3.6.2 Resposta – dades específiques <a name="3.6.2"></a>
 
 ![image](https://user-images.githubusercontent.com/32306731/146235064-3112a286-afd4-487b-a4cd-15fff59b9f69.png)
 
@@ -630,3 +633,30 @@ Consulta dels vehicles enregistrats a la DGT per a un propietari.
 | respostaVehiclesConductor/resultat/ codiResultat | Codi de resultat de la consulta: <lu><li>0: consten vehicles a nom del titular.</li><li>1: sense antecedents.</li><li>2: no consten vehicles a nom de l’interessat.</li><li>0502: error realitzant la consulta.</li></lu> |
 | respostavehiclesConductor/resultat/ descripcio | Descripció del resultat. |
 
+## 3.7 Consulta del distintiu mediambiental d'un vehicle (DGT_DISTINTIU_MEDIAMBIENTAL) <a name="3.7"></a>
+
+Consulta del distintiu mediambiental d'un vehicle a partir de la matrícula.
+
+## 3.7.1 Petició – dades específiques <a name="3.7.1"></a>
+
+| _Element_ | _Descripció_ |
+| --- | --- |
+|peticioConsultaDistintiuMediambiental/matricula |	Matrícula del vehicle. |
+
+![1](captures/1.jpg)
+
+
+## 3.7.2Resposta – dades específiques <a name="3.7.2"></a>
+
+
+![2](captures/2.jpg)
+
+
+| _Element_ | _Descripció_ |
+| --- | --- |
+|respostaConsultaDistintiuMediambiental/peticioConsultaDistintiuMediambiental |	Bloc de dades corresponent a la petició que origina la resposta.|
+| respostaConsultaDistintiuMediambiental/ resposta/DatosDistintivo | Dades del distintiu. |
+| //DatosDistintivo/Distintivo | Distintiu: <br><vi>SD: sense distintiu.</vi><br><vi>ECO</vi><br><vi>0: cero emissions.</vi><br><vi>B: groc.</vi><br><vi>C: verd.|
+| //DatosDistintivo/FechaAlta | No indica la data d'obtenció del distintiu mediambiental sinó una data en la que el vehicle disposava del distintiu (correspon a la data d'actualització de la informació al sistema de la DGT). |
+| respostaConsultaDistintiuMediambiental/ resultat/codiResultat | Codi de resultat de la consulta:<br><vi>0: consulta realitzada correctament.</vi><br><vi>1: vehicle consultat no consta.</vi><br><vi>0502: error realitzant la consulta.</vi><br><vi>
+| respostaConsultaDistintiuMediambiental/ /resultat/descripcio | Descripció del resultat. |
