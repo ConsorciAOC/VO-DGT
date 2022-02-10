@@ -638,6 +638,7 @@ Consulta dels vehicles enregistrats a la DGT per a un propietari.
 
 Consulta del distintiu mediambiental d'un vehicle a partir de la matrícula.
 
+
 ## 3.7.1 Petició – dades específiques <a name="3.7.1"></a>
 
 | _Element_ | _Descripció_ |
@@ -647,7 +648,7 @@ Consulta del distintiu mediambiental d'un vehicle a partir de la matrícula.
 ![1](captures/1.jpg)
 
 
-## 3.7.2Resposta – dades específiques <a name="3.7.2"></a>
+## 3.7.2 Resposta – dades específiques <a name="3.7.2"></a>
 
 
 ![2](captures/2.jpg)
