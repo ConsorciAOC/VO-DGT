@@ -36,7 +36,11 @@
 Aquest document detalla la missatgeria associada al servei de consulta d’informació del registre de vehicles i conductors de la Dirección General de Tráfico (en endavant DGT).
 
 Per poder realitzar la integració cal conèixer prèviament la següent documentació:
-•	Document de Missatgeria Genèrica de la PCI del Consorci AOC.
+
+- [Document de Missatgeria Genèrica de la PCI del Consorci AOC.][PCI]
+
+[PCI]:https://github.com/ConsorciAOC/PCI
+
 
 # 2 Transmissions de dades disponibles <a name="2"></a>
 
@@ -662,3 +666,15 @@ Consulta del distintiu mediambiental d'un vehicle a partir de la matrícula.
 | //DatosDistintivo/FechaAlta | No indica la data d'obtenció del distintiu mediambiental sinó una data en la que el vehicle disposava del distintiu (correspon a la data d'actualització de la informació al sistema de la DGT). |
 | respostaConsultaDistintiuMediambiental/ resultat/codiResultat | Codi de resultat de la consulta:<br><vi>0: consulta realitzada correctament.</vi><br><vi>1: vehicle consultat no consta.</vi><br><vi>0502: error realitzant la consulta.</vi><br><vi>
 | respostaConsultaDistintiuMediambiental/ /resultat/descripcio | Descripció del resultat. |
+
+
+# 4 Joc de proves
+
+
+
+L&#39;emissor final publica els següent [joc de proves a l&#39;entorn de pre-producció][proves] 
+
+[proves]: https://administracionelectronica.gob.es/ctt/svd/descargas#.YvOZNXbP2Ul
+![image](https://user-images.githubusercontent.com/32306731/137281698-9dfc2044-94f7-487f-a7d6-9a4e0707feb3.png) En cas de tindre problemes per accedir als jocs de proves, si us plau, obre un tiquet a través del [formulari][form]
+
+[form]:https://www.aoc.cat/portal-suport/peticio-integradors/idservei/integracio/
