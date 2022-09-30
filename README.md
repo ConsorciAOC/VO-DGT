@@ -30,6 +30,7 @@
    7. [3.7 Consulta del distintiu mediambiental d'un vehicle (DGT_DISTINTIU_MEDIAMBIENTAL)](#3.7)
       1. [3.7.1 Petició – dades específiques](#3.7.1)
       2. [3.7.2 Resposta – dades específiques](#3.7.2)
+4. [Joc de proves](#4)   
  
 # 1. Introducció <a name="1"></a>
 
@@ -82,7 +83,6 @@ Aquesta consulta requereix disposar de conveni amb la DGT.
 
 ![image](https://user-images.githubusercontent.com/32306731/145855951-db9dfd14-bf9d-478a-a434-20c62e2c1b8a.png)
 
-============================== CONTINUAR A PARTIR D'AQUI
 
 ### 3.1.2 Resposta – dades específiques <a name="3.1.2"></a>
 
@@ -668,7 +668,7 @@ Consulta del distintiu mediambiental d'un vehicle a partir de la matrícula.
 | respostaConsultaDistintiuMediambiental/ /resultat/descripcio | Descripció del resultat. |
 
 
-# 4 Joc de proves
+# 4 Joc de proves <a name="4"></a>
 
 
 
